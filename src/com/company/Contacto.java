@@ -1,7 +1,8 @@
 package com.company;
 
 public class Contacto {
-    String titulo;
+    String nombre;
+    String apellidos;
     String numero;
     String correo;
 

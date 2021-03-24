@@ -9,8 +9,11 @@ public class CrearContacto {
         Contacto contacto = new Contacto();
         boolean crear = false;
 
-        System.out.println("Nombre y apellidos: ");
-        contacto.titulo = Main.scanner.nextLine();
+        System.out.println("Nombre: ");
+        contacto.nombre = Main.scanner.nextLine();
+
+        System.out.println("Apellidos: ");
+        contacto.apellidos = Main.scanner.nextLine();
 
         System.out.println("Número: ");
         contacto.numero = Main.scanner.nextLine();
