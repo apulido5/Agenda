@@ -4,7 +4,7 @@ public class CrearContacto {
 
     void mostrar() {
         Titulo titulo = new Titulo();
-        titulo.mostrar("CREAR CONTACTO");     // titulo = "CREAR NOTA"
+        titulo.mostrar("CREAR CONTACTO");
 
         Contacto contacto = new Contacto();
         boolean crear = false;

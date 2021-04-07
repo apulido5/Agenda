@@ -7,7 +7,7 @@ public class Mensaje {
         printAfter();
     }
 
-    void mostrarWarn(String texto){
+    void mostrarOpcion(String texto){
         printBefore();
         System.out.println("\033[32m" + texto + "\033[0m");
         printAfter();
