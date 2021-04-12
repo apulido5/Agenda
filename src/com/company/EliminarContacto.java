@@ -6,11 +6,10 @@ public class EliminarContacto {
         System.out.println();
 
         Scanner VerifyEliminar = new Scanner(System.in);
-        System.out.print("\033[31m" + "Una vez eliminado el contacto no habra manera de " +
-                "recuperarlo, esta seguro de eliminar el contacto?(S/N): " + "\033[0m");
+        System.out.print("\033[31m" + "¿Esta seguro que quiere eliminar el contacto?(Yes/No): " + "\033[0m");
         String next = VerifyEliminar.next();
 
-        if (next.equals("S") || next.equals("s")){
+        if (next.equals("Yes") || next.equals("yes")){
             contacto.nombre = null;
             contacto.apellidos = null;
             contacto.numero = null;
@@ -18,13 +17,11 @@ public class EliminarContacto {
 
             Mensaje mensaje = new Mensaje();
             mensaje.mostrarInfo("Contacto Eliminado!");
-        } else if (next.equals("N") || next.equals("n")){
+        } else if (next.equals("No") || next.equals("no")){
             Mensaje mensaje = new Mensaje();
             mensaje.mostrarInfo("Operacion cancelada...");
         }
 
-//        Mensaje mensaje = new Mensaje();
-//        mensaje.mostrarOpcion("¿Que desea hacer a continuacion?");
 
         MenuAgenda menuAgenda = new MenuAgenda();
         String[] opciones = {"ELiminar otro contacto", "Volver al menu principal"};
